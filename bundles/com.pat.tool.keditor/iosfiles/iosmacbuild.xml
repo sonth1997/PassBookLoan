@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project name="Kony web project" default="all" basedir=".">
+	<target name="init">
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+          <classpath>
+            <pathelement location="${plugin.loc}/lib/ant-contrib-0.6.jar"/>
+          </classpath>
+        </taskdef>
+		<taskdef resource="com/kony/ant/antkonyscript.properties">
+	      <classpath>
+	        <pathelement location="${plugin.loc}/lib/KonyAntScript.jar"/>
+	      </classpath>
+	    </taskdef>
+	</target>
+	
+	<target name="create" depends="init">       
+		<exec-shell executable="cmd" failonerror="true" failifexecutionfails="true">
+			<arg line='/c "${command}"'/>
+		</exec-shell>
+	</target>
+	
+	<!-- Main target  -->
+	<target name="all" depends="init,create"/>
+</project>

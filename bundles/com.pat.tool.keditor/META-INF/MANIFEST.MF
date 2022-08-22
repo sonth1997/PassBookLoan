@@ -1,0 +1,189 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.15
+Created-By: 1.8.0_291-b10 (Oracle Corporation)
+
+Name: jettydeploy/thinclient/xhtml/small/images/320/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: ant_scripts/iOSBuild.xml
+SHA-256-Digest: DR7elBSy9+vHHVLEoGN+SpKTzMHeQ+DW1jIcXma3vww=
+
+Name: iosfiles/iosmacbuild.xml
+SHA-256-Digest: fEDqrq01xxDRyw0YuOkU5XJMjoyNL9gf8tZDQrtlWeY=
+
+Name: jettydeploy/thinclient/palm/images/240/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: web_xml/cache-web.xml
+SHA-256-Digest: 6wRCAhfnaVuXUf3vn4FxqQ1BZSP5c69o+WrLZgGUSoI=
+
+Name: jettydeploy/richclient/WEB-INF/classes/middleware-log4j.properti
+ es
+SHA-256-Digest: WkH7/nSDgqTHXWAPmR2NdZNV2ILpCVG9+KaLB8AIk14=
+
+Name: jettydeploy/thinclient/bjs/images/320/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/palm/images/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/xhtml/medium/images/480/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: lib/build.zip
+SHA-256-Digest: 0tDdFL/wcUbec7nPi7YdilGRTm8sCSGLByrEHk13JfM=
+
+Name: iosfiles/repositories.xml.zip
+SHA-256-Digest: aOSF+aJcoXP081kK+dlyViAcVAVcDsxMU0tsRcYnR7I=
+
+Name: web_xml/cloud-web.xml
+SHA-256-Digest: FG34ryt1X4PQBujXUDaUIiFIhUE0c4TW0VDko2CBxZM=
+
+Name: lib/antlr-3.3-complete.jar
+SHA-256-Digest: T+vyg6Afp6iVzjuR+fLR3R9NIj2O2LeZwTqqeq9QKuw=
+
+Name: iosfiles/konypluginstate.xml
+SHA-256-Digest: pHSSmxZGGfB8rQ2q65yZaBlCb8H2bPCafbh4RzBrBQ0=
+
+Name: jettydeploy/thinclient/tparty/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: iosfiles/infoplist_configuration.json
+SHA-256-Digest: Z+ASVinPLTZB8d3zd/dbVk5Vb/wJYC2x+pB35PKBBxk=
+
+Name: ant_scripts/cwidget.xml
+SHA-256-Digest: ZXExwCewUlcgvMi66cinuXvaCBrHHXsT+1g7ew/fcME=
+
+Name: jettydeploy/thinclient/WEB-INF/classes/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/android/images/240/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: iosfiles/export.plist
+SHA-256-Digest: 0QpsSl8fvoFs1E8XFW4S3S/tfR8kN5HmeQINquYciIQ=
+
+Name: lib/ant-contrib-0.6.jar
+SHA-256-Digest: xBoc9rEuuchufLAc3MKpkgr7kPA/ikfprAlxAuUOd0w=
+
+Name: jettydeploy/richclient/WEB-INF/web.xml
+SHA-256-Digest: DVz02zLFHXzVHxzhYSSgF9lBoHxpTX7hD2qTtVr3DfE=
+
+Name: jettydeploy/thinclient/WEB-INF/lib/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/images/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: web_xml/cloud-https.xml
+SHA-256-Digest: xRF2RXZnKWEsk9tXuyPze9HdeKSWeDB5ZmGjMx441IE=
+
+Name: iosfiles/readprovprof.sh
+SHA-256-Digest: XzwYIsCRNe6uKTO3HVM5nM+/stI12cChKliJMjvCCqo=
+
+Name: jettydeploy/thinclient/xhtml/large/images/320/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: ant_scripts/clang.bat
+SHA-256-Digest: SwrVjqRfM3E1AinExFheBxOXMbdi205qAe29Bie0snI=
+
+Name: jettydeploy/thinclient/xhtml/medium/images/320/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: ant_scripts/clang.exe
+SHA-256-Digest: aIGqY4Di4YfnlnqCUmn6PkHG7PIYdjCUCKUgQJtAttI=
+
+Name: jettydeploy/thinclient/palm/images/480/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/scripts/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/xhtml/small/images/240/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/richclient/kbf/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/iphone/images/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/palm/images/320/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: ant_scripts/tomcatbuild.xml
+SHA-256-Digest: 4ojOgXVbxmGGgU57AIqh1AT/bJDCPjuGL34IldjcTac=
+
+Name: jettydeploy/thinclient/bb/images/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/xhtml/small/images/480/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: iosfiles/iosspalaunch.sh
+SHA-256-Digest: sj2aIn4fJbsWyx4/vM/2ydbGRaTqhqwWqO7CsbqVKqo=
+
+Name: web_xml/nocache-web.xml
+SHA-256-Digest: 1H2ET4v+4+SuERgkXYNiEEqb2TQD5/ElhhP0TvRkE0A=
+
+Name: jettydeploy/thinclient/android/images/480/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: lib/AntelopeTasks_3.4.0.jar
+SHA-256-Digest: p5MoUHnZfkqVlgsncJxUdVkyeYHHqPJgmPr59s+/YS8=
+
+Name: jettydeploy/thinclient/bjs/images/480/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: ant_scripts/buildEar.xml
+SHA-256-Digest: UYHfJwj9cksr/Ydf0G8VX6/H6HhBh+cuXyuHMV6ILYw=
+
+Name: iosfiles/workbench.xmi
+SHA-256-Digest: aph7SEWSDTtGALfcmMaBCQNkArLrF1NwGG3IQUt7c6c=
+
+Name: jettydeploy/build.xml
+SHA-256-Digest: Wdnp6CVHHAGAqjxPWsy8J2pzFCECV4mBn66hs2FOVXs=
+
+Name: iosfiles/iosweblaunch.sh
+SHA-256-Digest: NGLjogHZZZQiTY182KPZdQ7+jefoT/AhucHeby9mhow=
+
+Name: jettydeploy/richclient/WEB-INF/classes/com/konylabs/middleware/a
+ pplication/download/DevKBFDownloadServlet.class
+SHA-256-Digest: RaShJnOBa3nIdbJwDpk1iCcfM12uqdEs6LxsE/JF+eI=
+
+Name: jettydeploy/thinclient/android/images/320/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: ant_scripts/commonantscript.xml
+SHA-256-Digest: 32WFgmB1s/jMbpjxutM/81++TVPyGbn//S3hzCCz4CA=
+
+Name: iosfiles/waxsim
+SHA-256-Digest: bqzfXP5SoPG1M2/8rpEXRG9rYVg1kP92fPcGZXCInZg=
+
+Name: jettydeploy/thinclient/xhtml/large/images/480/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: jettydeploy/thinclient/xhtml/large/images/240/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: lib/KonyAntScript.jar
+SHA-256-Digest: pdvzkv3kNVHDq0ZPRMVWXVG4bPE0euZuorH8si9OofI=
+
+Name: jettydeploy/thinclient/bjs/images/240/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: iosfiles/debugproxyinstall.sh
+SHA-256-Digest: 8hS+Ul8Xw8LwyOJp6DxT/uOW6fTQUogAP3SeF8dTEq4=
+
+Name: iosfiles/deploymenttarget.properties
+SHA-256-Digest: yXSmHaN1HNmjPk/M+6TckT8Fk8hlG2f+USwPiSjFxnA=
+
+Name: jettydeploy/thinclient/xhtml/medium/images/240/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: ant_scripts/clang.sh
+SHA-256-Digest: V/81fOK2XFv6wvnN1A5V1Cg9myr4EdMYtGtQj/BRnIM=
+
+Name: jettydeploy/thinclient/win/images/320/_test
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
