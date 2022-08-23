@@ -1,0 +1,66 @@
+{
+    "konyVizVersion": "9.6.1",
+    "pluginsInfo": {
+        "Android": {
+            "fileName": "com.pat.android_9.6.0.v202207121348.jar",
+            "id": "com.pat.android",
+            "version": "9.6.0.v202207121348"
+        },
+        "Kony_Desktop_Web": {
+            "fileName": "com.kony.desktopweb_9.6.0.v202207141338.jar",
+            "id": "com.kony.desktopweb",
+            "version": "9.6.0.v202207141338"
+        },
+        "Kony_Reference_Architecture": {
+            "fileName": "com.kony.referencearchitecture_9.6.0.v202206271321.jar",
+            "id": "com.kony.referencearchitecture",
+            "version": "9.6.0.v202206271321"
+        },
+        "Kony_Studio": {
+            "fileName": "com.pat.tool.keditor_9.6.0.v202207140059.jar",
+            "id": "com.pat.tool.keditor",
+            "version": "9.6.0.v202207140059"
+        },
+        "Kony_Web_Commons": {
+            "fileName": "com.kony.webcommons_9.6.0.202207141654.jar",
+            "id": "com.kony.webcommons",
+            "version": "9.6.0.202207141654"
+        },
+        "MobileFabric_Client_SDK": {
+            "fileName": "com.kony.mobile.fabric.client.sdk_9.6.1.v202208101518.jar",
+            "id": "com.kony.mobile.fabric.client.sdk",
+            "version": "9.6.1.v202208101518"
+        },
+        "SPA": {
+            "fileName": "com.kony.spa_9.6.0.v202207141133.jar",
+            "id": "com.kony.spa",
+            "version": "9.6.0.v202207141133"
+        },
+        "Tablet_Android": {
+            "fileName": "com.pat.tabrcandroid_9.6.0.v202207121348.jar",
+            "id": "com.pat.tabrcandroid",
+            "version": "9.6.0.v202207121348"
+        },
+        "Third_Party_Jars_Plug-in": {
+            "fileName": "com.kony.thirdparty.jars_9.0.0.v201911072015.jar",
+            "id": "com.kony.thirdparty.jars",
+            "version": "9.0.0.v201911072015"
+        },
+        "Windows_10_Plug-in": {
+            "fileName": "com.kony.windows10_9.5.0.v202203301238.jar",
+            "id": "com.kony.windows10",
+            "version": "9.5.0.v202203301238"
+        },
+        "Windows_Desktop_Plug-in": {
+            "fileName": "com.kony.windows_9.5.0.v202203301304.jar",
+            "id": "com.kony.windows",
+            "version": "9.5.0.v202203301304"
+        },
+        "iOS_Plugin": {
+            "fileName": "com.kony.ios_9.6.0.v202207131708.jar",
+            "id": "com.kony.ios",
+            "version": "9.6.0.v202207131708"
+        }
+    },
+    "status": "COMPLETED"
+}

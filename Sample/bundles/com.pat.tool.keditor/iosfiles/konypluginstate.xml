@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="pluginstate">
+	<item value="true" key="TestLine.balckberrybuild"/>
+	<item value="true" key="TestLine.j2mebuild"/>
+	<item value="true" key="abc.apppropmodified"/>
+	<item value="false" key="TestLine.apppropmodified"/>
+	<item value="true" key="TestLine.winmobilebuild"/>
+</section>

@@ -1,0 +1,28 @@
+{
+    "FP": {
+        "iphone": false,
+        "android": false,
+        "ipad": false,
+        "tabrcandroid": false,
+        "spaip": false,
+        "spaan": false,
+        "spabb": false,
+        "spaipad": false,
+        "spaandroidtablet": false,
+        "winphone8": false,
+        "spawinphone8": false,
+        "windows8": false,
+        "spawindowstablet": false,
+        "desktopweb": false
+    },
+    "general": {
+        "codeEditor": {},
+        "proxyConfig": {},
+        "remoteMACConfig": {},
+        "testRecorder": {
+            "port": 9111
+        },
+        "AllowLockManagementSettings": false
+    },
+    "build": {}
+}

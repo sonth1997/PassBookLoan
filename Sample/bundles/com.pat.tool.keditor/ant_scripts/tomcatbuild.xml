@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project name="Android emu scripts" default="start" basedir=".">
+    <target name="init">
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+        <classpath>
+        <pathelement location="${plugin.loc}/lib/ant-contrib-0.6.jar"/>
+        </classpath>
+    </taskdef>
+	<taskdef resource="com/kony/ant/antkonyscript.properties">
+      <classpath>
+        <pathelement location="${plugin.loc}/lib/KonyAntScript.jar"/>
+      </classpath>
+    </taskdef>
+    <osfamily property="os.family"/>
+
+    <if>
+    	<equals arg1="${os.family}" arg2="windows"/>
+    	<then>
+    		<property name="shell.permission" value="false"/>
+    		<property name="isspawn" value="true"/>
+
+    	</then>
+    	<else>
+    		<property name="shell.permission" value="true"/>
+    		<property name="isspawn" value="false"/>
+    	</else>
+    </if>
+
+    </target>
+    
+    <target name="stop" depends="init">
+		<echo message="${tomcat_path}"/>
+	    <exec-script executable="${tomcat_path}/shutdown" spawn="${isspawn}">
+	    	<env key="CATALINA_HOME" path="${catalina.home}"/>
+	    </exec-script>
+    	<sleep seconds="10"/>
+     </target>
+	
+    <target name="start" depends="init">
+        
+		<echo message="${tomcat_path}"/>
+	    <exec-script executable="${tomcat_path}/startup" spawn="${isspawn}">
+	    	<env key="CATALINA_HOME" path="${catalina.home}"/>
+	    </exec-script>
+    	<waitfor maxwait="3" maxwaitunit="minute" checkevery="500">
+    	    <http url="http://localhost:${port}"/>
+    	</waitfor>
+     </target>
+	
+</project>

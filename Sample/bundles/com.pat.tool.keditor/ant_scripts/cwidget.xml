@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="IDE" default="main" basedir=".">
+	<target name="init">
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		  <classpath>
+		    <pathelement location="${plugin.loc}/lib/ant-contrib-0.6.jar"/>
+		  </classpath>
+	    </taskdef>
+		<taskdef resource="com/kony/ant/antkonyscript.properties">
+	      <classpath>
+	        <pathelement location="${plugin.loc}/lib/KonyAntScript.jar"/>
+	      </classpath>
+	    </taskdef>
+		<osfamily property="os.family"/>
+	    <if>
+	    	<not>
+	    	<equals arg1="${os.family}" arg2="windows"/>
+	    	</not>
+	    	<then>
+    			<exec-shell executable="cmd">
+    				<arg line='/c "chmod 777 ${basedir}/clang.sh"'/>
+    			</exec-shell>
+	    	</then>
+	    </if>
+	</target>
+	
+	<target name="main" depends="init">
+		<exec-script executable="${basedir}/clang" failonerror="true" failifexecutionfails="true" dir="${basedir}">
+			<env key="PATH" path="${env.PATH};${basedir}/clang.exe;"/>
+			<arg value="${input.file}"/>
+			<arg value="${output.file}"/>
+		</exec-script>
+	</target>
+	
+</project>

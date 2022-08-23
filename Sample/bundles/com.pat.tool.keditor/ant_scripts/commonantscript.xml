@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="common_script_file" default="default">
+    <target name="default">
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+            <classpath>
+                <pathelement location="${plugin.loc}/lib/ant-contrib-0.6.jar"/>
+            </classpath>
+        </taskdef>
+        <taskdef resource="com/kony/ant/antkonyscript.properties">
+            <classpath>
+                <pathelement location="${plugin.loc}/lib/KonyAntScript.jar"/>
+            </classpath>
+        </taskdef>
+        <osfamily property="os.family"/>
+        <if>
+            <equals arg1="${os.family}" arg2="windows"/>
+            <then>
+                <exec executable="cmd.exe" failonerror="true" failifexecutionfails="true">
+                    <env key="JAVA_HOME" path="${installer.javahome}"/>
+                    <arg line='/c "${base.command}"'/>
+                </exec>
+            </then>
+            <else>
+                <exec-shell executable="cmd" failonerror="true" failifexecutionfails="true">
+                    <arg line='/c "export JAVA_HOME=${installer.javahome};${base.command}"'/>
+                </exec-shell>
+            </else>
+        </if>
+    </target>
+</project>

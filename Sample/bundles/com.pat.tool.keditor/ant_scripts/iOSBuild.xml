@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="IDE" default="testConnection" basedir=".">
+	<target name="init">
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		  <classpath>
+		    <pathelement location="${plugin.loc}/lib/ant-contrib-0.6.jar"/>
+		  </classpath>
+	    </taskdef>
+		
+		<!-- taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec">
+		  <classpath>
+		    <pathelement location="${plugin.loc}/lib/jsch-0.1.49.jar"/>
+		  	<pathelement location="D:/eclipse-rcp-helios-win32/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-jsch.jar"/>
+		  </classpath>
+	    </taskdef-->
+		
+		<property name="ipaddress" value="10.10.18.41"/>
+		<property name="username" value="user"/>
+		<property name="password" value="kony@1234"/>
+		<property name="port" value="22"/>
+		<property name="binaryFileLocation" value="${webapps.loc}\${projectname}r\kbf"/>
+		<property name="scriptFileLocation" value="C:\Users\KH080\Desktop"/>
+		
+		<!-- ARgs to script -->
+		<property name="version" value="50"/>
+		<property name="build" value="${projectname}"/>
+		
+		<if>
+			<equals arg1="${port}" arg2="${port}"/>
+			<then>
+				<property name="portnum" value="22"/>
+			</then>
+			<else>
+				<property name="portnum" value="${port}"/>
+			</else>
+		</if>
+	</target>
+	
+	<target name="testConnection" depends="init">
+		
+		<sshexec host="${ipaddress}"
+				username="${username}"
+				password="${password}"
+				port="${portnum}"
+				trust="true" command="pwd"/>
+	</target>
+	
+	<target name="getProvProfiles" depends="init">
+		<available file="${iOSFolder}/provprof.txt" property="provprof.present"/>
+		<if>
+			<equals arg1="${provprof.present}" arg2="true"/>
+			<then>
+				<delete file="${iOSFolder}/provprof.txt"/>
+			</then>
+		</if>
+		<sshexec host="${ipaddress}"
+				username="${username}"
+				password="${password}"
+				port="${portnum}"
+				trust="true" command="rm provprof.txt;ls '/Users/${username}/Library/MobileDevice/Provisioning Profiles' > provprof.txt"/>
+		<scp trust="true" verbose="true"
+			file="${username}:${password}@${ipaddress}:provprof.txt"
+			todir="${iOSFolder}" 
+			password="${password}"
+			port="${port}">
+        </scp> 
+	</target>
+	
+	<target name="getIdentities" depends="init">
+		<available file="${iOSFolder}/codesign.txt" property="codesign.present"/>
+		<if>
+			<equals arg1="${codesign.present}" arg2="true"/>
+			<then>
+				<delete file="${iOSFolder}/codesign.txt"/>
+			</then>
+		</if>
+		
+		<sshexec host="${ipaddress}"
+				username="${username}"
+				password="${password}"
+				port="${portnum}"
+				trust="true" command="rm codesign.txt;security find-identity -v -p codesigning > codesign.txt"/>
+		<scp trust="true" verbose="true"
+			file="${username}:${password}@${ipaddress}:codesign.txt"
+			todir="${iOSFolder}" 
+			password="${password}"
+			port="${port}">
+        </scp> 
+	</target>
+	
+	<target name="execute" depends="init">
+		 <sshexec host="${ipaddress}"
+			username="${username}"
+			password="${password}"
+			port="${port}"
+			trust="true"
+			command="pwd;mkdir -p Kony/${projectname};pwd;cd Kony/${projectname}"/>
+			
+			<scp trust="true" verbose="true"
+				todir="${username}@${ipaddress}:Kony/${projectname}/" 
+				password="${password}"
+				port="${port}">
+				<fileset dir="${binaryFileLocation}">
+								<include name="${KARFileName}"/>
+				</fileset>
+							<fileset dir="${scriptFileLocation}">
+								<include name="kbuildtmp.sh"/>
+				</fileset>
+	        </scp> 
+			
+			<sshexec host="${ipaddress}"
+			username="${username}"
+			password="${password}"
+			port="${port}"
+			trust="true"
+			command="cd Kony/${projectname};sh kbuildtmp.sh ${platform} ${projectname} ${version} ${build} ${archive} ${mode} ${username}"
+			outputproperty="outProp"/>
+			<echo message="OUTPUT: ${outProp}"/>
+
+	</target>
+</project>
